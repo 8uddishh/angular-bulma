@@ -1,9 +1,7 @@
 import {
   Directive,
   ElementRef,
-  Renderer2,
-  OnInit,
-  OnDestroy
+  Renderer2
 } from '@angular/core';
 import { BulmaBaseClassDirective } from './../bulma.base.class.directive';
 

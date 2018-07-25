@@ -50,7 +50,9 @@ import {
   BulmaHiddenFullHdirective,
   BulmaHiddenTabletDirective,
   BulmaHiddenTouchDirective,
-  BulmaHiddenWidescreenDirective
+  BulmaHiddenWidescreenDirective,
+  BulmaTextColorDirective,
+  BulmaBackgroundColorDirective
 } from './modifiers';
 
 @NgModule({
@@ -101,7 +103,9 @@ import {
     BulmaHiddenFullHdirective,
     BulmaHiddenTabletDirective,
     BulmaHiddenTouchDirective,
-    BulmaHiddenWidescreenDirective
+    BulmaHiddenWidescreenDirective,
+    BulmaTextColorDirective,
+    BulmaBackgroundColorDirective
   ],
   exports: [
     BulmaContainerComponent,
@@ -149,7 +153,9 @@ import {
     BulmaHiddenFullHdirective,
     BulmaHiddenTabletDirective,
     BulmaHiddenTouchDirective,
-    BulmaHiddenWidescreenDirective 
+    BulmaHiddenWidescreenDirective,
+    BulmaTextColorDirective,
+    BulmaBackgroundColorDirective 
   ]
 })
 export class BulmaModule {}
