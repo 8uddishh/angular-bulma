@@ -32,7 +32,8 @@ export class BulmaBaseClassDirective implements OnInit {
       tag == 'form' ||
       tag == 'ul' ||
       tag == 'li' ||
-      tag == 'img'
+      tag == 'img' ||
+      tag == 'span'
     ) {
       this.render.addClass(this.el.nativeElement, this.className);
     } else {
@@ -55,6 +56,6 @@ export class BulmaViewportDirective extends BulmaBaseClassDirective implements O
     } else {
       this.className = this.vclassName;
     }
-    this.ngOnInit();
+    super.ngOnInit();
   }
 }
