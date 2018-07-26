@@ -52,7 +52,20 @@ import {
   BulmaHiddenTouchDirective,
   BulmaHiddenWidescreenDirective,
   BulmaTextColorDirective,
-  BulmaBackgroundColorDirective
+  BulmaBackgroundColorDirective,
+  BulmaTextCenteredDirective,
+  BulmaTextJustifiedDirective,
+  BulmaTextLeftDirective,
+  BulmaTextRightDirective,
+  BulmaTextSizeDirective,
+  BulmaUppercaseDirective,
+  BulmaCapitalizedDirective,
+  BulmaItalicDirective,
+  BulmaLowercaseDirective,
+  BulmaTextWeightBoldDirective,
+  BulmaTextWeightLightDirective,
+  BulmaTextWeightNormalDirective,
+  BulmaTextWeightSemiboldDirective
 } from './modifiers';
 
 @NgModule({
@@ -105,7 +118,20 @@ import {
     BulmaHiddenTouchDirective,
     BulmaHiddenWidescreenDirective,
     BulmaTextColorDirective,
-    BulmaBackgroundColorDirective
+    BulmaBackgroundColorDirective,
+    BulmaTextCenteredDirective,
+    BulmaTextJustifiedDirective,
+    BulmaTextLeftDirective,
+    BulmaTextRightDirective,
+    BulmaTextSizeDirective,
+    BulmaUppercaseDirective,
+    BulmaCapitalizedDirective,
+    BulmaItalicDirective,
+    BulmaLowercaseDirective,
+    BulmaTextWeightBoldDirective,
+    BulmaTextWeightLightDirective,
+    BulmaTextWeightNormalDirective,
+    BulmaTextWeightSemiboldDirective
   ],
   exports: [
     BulmaContainerComponent,
@@ -155,7 +181,20 @@ import {
     BulmaHiddenTouchDirective,
     BulmaHiddenWidescreenDirective,
     BulmaTextColorDirective,
-    BulmaBackgroundColorDirective 
+    BulmaBackgroundColorDirective,
+    BulmaTextCenteredDirective,
+    BulmaTextJustifiedDirective,
+    BulmaTextLeftDirective,
+    BulmaTextRightDirective,
+    BulmaTextSizeDirective,
+    BulmaUppercaseDirective,
+    BulmaCapitalizedDirective,
+    BulmaItalicDirective,
+    BulmaLowercaseDirective,
+    BulmaTextWeightBoldDirective,
+    BulmaTextWeightLightDirective,
+    BulmaTextWeightNormalDirective,
+    BulmaTextWeightSemiboldDirective
   ]
 })
 export class BulmaModule {}
