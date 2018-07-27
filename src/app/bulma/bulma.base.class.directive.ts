@@ -51,7 +51,7 @@ export class BulmaViewportDirective extends BulmaBaseClassDirective implements O
   @Input('viewport') viewport: Viewport = '';
 
   ngOnInit(): void {
-    if (this.viewport) {
+    if (this.viewport != '') {
       this.className = `${this.vclassName}-${this.viewport}`;
     } else {
       this.className = this.vclassName;
