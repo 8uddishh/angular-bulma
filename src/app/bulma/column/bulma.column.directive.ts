@@ -12,10 +12,10 @@ import { BulmaViewportDirective } from '../bulma.base.class.directive';
   selector: 'bulma-column[three-quarters]'
 })
 export class BulmaColumnThreeQuartersDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-three-quarters');
+    this.render.addClass(this.el.nativeElement, 'is-three-quarters');
   }
 }
 
@@ -23,10 +23,10 @@ export class BulmaColumnThreeQuartersDirective implements OnInit {
   selector: 'bulma-column[two-thirds]'
 })
 export class BulmaColumnTwoThirdsDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-two-thirds');
+    this.render.addClass(this.el.nativeElement, 'is-two-thirds');
   }
 }
 
@@ -34,10 +34,10 @@ export class BulmaColumnTwoThirdsDirective implements OnInit {
   selector: 'bulma-column[half]'
 })
 export class BulmaColumnHalfDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-half');
+    this.render.addClass(this.el.nativeElement, 'is-half');
   }
 }
 
@@ -45,10 +45,10 @@ export class BulmaColumnHalfDirective implements OnInit {
   selector: 'bulma-column[one-third]'
 })
 export class BulmaColumnOneThirdDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-one-third');
+    this.render.addClass(this.el.nativeElement, 'is-one-third');
   }
 }
 
@@ -56,10 +56,10 @@ export class BulmaColumnOneThirdDirective implements OnInit {
   selector: 'bulma-column[one-quarter]'
 })
 export class BulmaColumnOneQuarterDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-one-quarter');
+    this.render.addClass(this.el.nativeElement, 'is-one-quarter');
   }
 }
 
@@ -67,10 +67,10 @@ export class BulmaColumnOneQuarterDirective implements OnInit {
   selector: 'bulma-column[four-fifths]'
 })
 export class BulmaColumnFourFifthsDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-four-fifths');
+    this.render.addClass(this.el.nativeElement, 'is-four-fifths');
   }
 }
 
@@ -78,10 +78,10 @@ export class BulmaColumnFourFifthsDirective implements OnInit {
   selector: 'bulma-column[three-fifths]'
 })
 export class BulmaColumnThreeFifthsDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-three-fifths');
+    this.render.addClass(this.el.nativeElement, 'is-three-fifths');
   }
 }
 
@@ -89,10 +89,10 @@ export class BulmaColumnThreeFifthsDirective implements OnInit {
   selector: 'bulma-column[two-fifths]'
 })
 export class BulmaColumnTwoFifthsDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-two-fifths');
+    this.render.addClass(this.el.nativeElement, 'is-two-fifths');
   }
 }
 
@@ -100,10 +100,10 @@ export class BulmaColumnTwoFifthsDirective implements OnInit {
   selector: 'bulma-column[one-fifth]'
 })
 export class BulmaColumnOneFifthDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-one-fifth');
+    this.render.addClass(this.el.nativeElement, 'is-one-fifth');
   }
 }
 
@@ -111,10 +111,10 @@ export class BulmaColumnOneFifthDirective implements OnInit {
   selector: 'bulma-column[two]'
 })
 export class BulmaColumnTwoDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-2');
+    this.render.addClass(this.el.nativeElement, 'is-2');
   }
 }
 
@@ -122,10 +122,10 @@ export class BulmaColumnTwoDirective implements OnInit {
   selector: 'bulma-column[three]'
 })
 export class BulmaColumnThreeDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-3');
+    this.render.addClass(this.el.nativeElement, 'is-3');
   }
 }
 
@@ -133,10 +133,10 @@ export class BulmaColumnThreeDirective implements OnInit {
   selector: 'bulma-column[four]'
 })
 export class BulmaColumnFourDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-4');
+    this.render.addClass(this.el.nativeElement, 'is-4');
   }
 }
 
@@ -144,10 +144,10 @@ export class BulmaColumnFourDirective implements OnInit {
   selector: 'bulma-column[five]'
 })
 export class BulmaColumnFiveDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-5');
+    this.render.addClass(this.el.nativeElement, 'is-5');
   }
 }
 
@@ -155,10 +155,10 @@ export class BulmaColumnFiveDirective implements OnInit {
   selector: 'bulma-column[six]'
 })
 export class BulmaColumnSixDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-6');
+    this.render.addClass(this.el.nativeElement, 'is-6');
   }
 }
 
@@ -166,10 +166,10 @@ export class BulmaColumnSixDirective implements OnInit {
   selector: 'bulma-column[seven]'
 })
 export class BulmaColumnSevenDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-7');
+    this.render.addClass(this.el.nativeElement, 'is-7');
   }
 }
 
@@ -177,10 +177,10 @@ export class BulmaColumnSevenDirective implements OnInit {
   selector: 'bulma-column[eight]'
 })
 export class BulmaColumnEightDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-8');
+    this.render.addClass(this.el.nativeElement, 'is-8');
   }
 }
 
@@ -188,10 +188,10 @@ export class BulmaColumnEightDirective implements OnInit {
   selector: 'bulma-column[nine]'
 })
 export class BulmaColumnNineDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-9');
+    this.render.addClass(this.el.nativeElement, 'is-9');
   }
 }
 
@@ -199,10 +199,10 @@ export class BulmaColumnNineDirective implements OnInit {
   selector: 'bulma-column[ten]'
 })
 export class BulmaColumnTenDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-10');
+    this.render.addClass(this.el.nativeElement, 'is-10');
   }
 }
 
@@ -210,23 +210,21 @@ export class BulmaColumnTenDirective implements OnInit {
   selector: 'bulma-column[eleven]'
 })
 export class BulmaColumnElevenDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-11');
+    this.render.addClass(this.el.nativeElement, 'is-11');
   }
 }
-//
+
 @Directive({
   selector: 'bulma-column[offset-three-quarters]'
 })
 export class BulmaColumnOffsetThreeQuartersDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add(
-      'is-offset-three-quarters'
-    );
+    this.render.addClass(this.el.nativeElement, 'is-offset-three-quarters');
   }
 }
 
@@ -234,10 +232,10 @@ export class BulmaColumnOffsetThreeQuartersDirective implements OnInit {
   selector: 'bulma-column[offset-two-thirds]'
 })
 export class BulmaColumnOffsetTwoThirdsDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-two-thirds');
+    this.render.addClass(this.el.nativeElement, 'is-offset-two-thirds');
   }
 }
 
@@ -245,10 +243,10 @@ export class BulmaColumnOffsetTwoThirdsDirective implements OnInit {
   selector: 'bulma-column[offset-half]'
 })
 export class BulmaColumnOffsetHalfDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-half');
+    this.render.addClass(this.el.nativeElement, 'is-offset-half');
   }
 }
 
@@ -256,10 +254,10 @@ export class BulmaColumnOffsetHalfDirective implements OnInit {
   selector: 'bulma-column[offset-one-third]'
 })
 export class BulmaColumnOffsetOneThirdDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-one-third');
+    this.render.addClass(this.el.nativeElement, 'is-offset-one-third');
   }
 }
 
@@ -267,10 +265,10 @@ export class BulmaColumnOffsetOneThirdDirective implements OnInit {
   selector: 'bulma-column[offset-one-quarter]'
 })
 export class BulmaColumnOffsetOneQuarterDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-one-quarter');
+    this.render.addClass(this.el.nativeElement, 'is-offset-one-quarter');
   }
 }
 
@@ -278,10 +276,10 @@ export class BulmaColumnOffsetOneQuarterDirective implements OnInit {
   selector: 'bulma-column[offset-four-fifths]'
 })
 export class BulmaColumnOffsetFourFifthsDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-four-fifths');
+    this.render.addClass(this.el.nativeElement, 'is-offset-four-fifths');
   }
 }
 
@@ -289,10 +287,10 @@ export class BulmaColumnOffsetFourFifthsDirective implements OnInit {
   selector: 'bulma-column[offset-hree-fifths]'
 })
 export class BulmaColumnOffsetThreeFifthsDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-three-fifths');
+    this.render.addClass(this.el.nativeElement, 'is-offset-three-fifths');
   }
 }
 
@@ -300,10 +298,10 @@ export class BulmaColumnOffsetThreeFifthsDirective implements OnInit {
   selector: 'bulma-column[offset-two-fifths]'
 })
 export class BulmaColumnOffsetTwoFifthsDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-two-fifths');
+    this.render.addClass(this.el.nativeElement, 'is-offset-two-fifths');
   }
 }
 
@@ -311,10 +309,10 @@ export class BulmaColumnOffsetTwoFifthsDirective implements OnInit {
   selector: 'bulma-column[offset-one-fifth]'
 })
 export class BulmaColumnOffsetOneFifthDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-one-fifth');
+    this.render.addClass(this.el.nativeElement, 'is-offset-one-fifth');
   }
 }
 
@@ -322,10 +320,10 @@ export class BulmaColumnOffsetOneFifthDirective implements OnInit {
   selector: 'bulma-column[offset-one]'
 })
 export class BulmaColumnOffsetOneDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-1');
+    this.render.addClass(this.el.nativeElement, 'is-offset-1');
   }
 }
 
@@ -333,10 +331,10 @@ export class BulmaColumnOffsetOneDirective implements OnInit {
   selector: 'bulma-column[offset-two]'
 })
 export class BulmaColumnOffsetTwoDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-2');
+    this.render.addClass(this.el.nativeElement, 'is-offset-2');
   }
 }
 
@@ -344,99 +342,99 @@ export class BulmaColumnOffsetTwoDirective implements OnInit {
   selector: 'bulma-column[offset-three]'
 })
 export class BulmaColumnOffsetThreeDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-3');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-3');
+    }
 }
 
 @Directive({
   selector: 'bulma-column[offset-four]'
 })
 export class BulmaColumnOffsetFourDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-4');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-4');
+    }
 }
 
 @Directive({
   selector: 'bulma-column[offset-five]'
 })
 export class BulmaColumnOffsetFiveDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-5');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-5');
+    }
 }
 
 @Directive({
   selector: 'bulma-column[offset-six]'
 })
 export class BulmaColumnOffsetSixDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-6');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-6');
+    }
 }
 
 @Directive({
   selector: 'bulma-column[offset-seven]'
 })
 export class BulmaColumnOffsetSevenDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-7');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-7');
+    }
 }
 
 @Directive({
   selector: 'bulma-column[offset-eight]'
 })
 export class BulmaColumnOffsetEightDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-8');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-8');
+    }
 }
 
 @Directive({
   selector: 'bulma-column[offset-nine]'
 })
 export class BulmaColumnOffsetNineDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-9');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-9');
+    }
 }
 
 @Directive({
   selector: 'bulma-column[offset-ten]'
 })
 export class BulmaColumnOffsetTenDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-10');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-10');
+    }
 }
 
 @Directive({
   selector: 'bulma-column[offset-eleven]'
 })
 export class BulmaColumnoOfsetElevenDirective implements OnInit {
-  constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit(): void {
-    this.el.nativeElement.childNodes[0].classList.add('is-offset-11');
-  }
+    ngOnInit(): void {
+      this.render.addClass(this.el.nativeElement, 'is-offset-11');
+    }
 }
 
 @Directive({

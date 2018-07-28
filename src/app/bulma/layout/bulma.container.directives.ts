@@ -1,34 +1,41 @@
-import { Directive, ElementRef, Input, Renderer, OnInit } from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  Input,
+  Renderer,
+  OnInit,
+  Renderer2
+} from '@angular/core';
 
 @Directive({
-    selector: 'bulma-container[fluid]',
+  selector: 'bulma-container[fluid]'
 })
 export class BulmaContainerFluidDirective implements OnInit {
-    constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
-    ngOnInit(): void {
-        this.el.nativeElement.childNodes[0].classList.add('is-fluid');
-    }
+  ngOnInit(): void {
+    this.render.addClass(this.el.nativeElement, 'is-fluid');
+  }
 }
 
 @Directive({
-    selector: 'bulma-container[fullhd]',
+  selector: 'bulma-container[fullhd]'
 })
 export class BulmaContainerFullHdDirective implements OnInit {
-    constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
-    ngOnInit(): void {
-        this.el.nativeElement.childNodes[0].classList.add('is-fullhd');
-    }
+  ngOnInit(): void {
+    this.render.addClass(this.el.nativeElement, 'is-fullhd');
+  }
 }
 
 @Directive({
-    selector: 'bulma-container[widescreen]',
+  selector: 'bulma-container[widescreen]'
 })
-export class BulmaContainerWideScreedDirective implements OnInit  {
-    constructor(private el: ElementRef) { }
+export class BulmaContainerWideScreedDirective implements OnInit {
+  constructor(private el: ElementRef, private render: Renderer2) {}
 
-    ngOnInit(): void {
-        this.el.nativeElement.childNodes[0].classList.add('is-widescreen');
-    }
+  ngOnInit(): void {
+    this.render.addClass(this.el.nativeElement, 'is-widescreen');
+  }
 }

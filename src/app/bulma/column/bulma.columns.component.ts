@@ -1,21 +1,33 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
-    selector: 'bulma-columns',
-    template: `<div class="columns" [attr.role]="role">
-        <ng-content></ng-content>
-    </div>`
+  selector: 'bulma-columns',
+  template: `<ng-content></ng-content>`
 })
-export class BulmaColumnsComponent {
-    @Input() role: string = '';
+export class BulmaColumnsComponent implements OnInit {
+  @Input() role: string = '';
+  constructor(private el: ElementRef, private render: Renderer2) {}
+
+  ngOnInit(): void {
+    this.render.addClass(this.el.nativeElement, 'columns');
+    if (this.role) {
+      this.render.setAttribute(this.el.nativeElement, 'role', this.role);
+    }
+  }
 }
 
 @Component({
-    selector: 'bulma-column',
-    template: `<div class="column" [attr.role]="role">
-        <ng-content></ng-content>
-    </div>`
+  selector: 'bulma-column',
+  template: `<ng-content></ng-content>`
 })
-export class BulmaColumnComponent {
-    @Input() role: string = '';
+export class BulmaColumnComponent implements OnInit {
+  @Input() role: string = '';
+  constructor(private el: ElementRef, private render: Renderer2) {}
+
+  ngOnInit(): void {
+    this.render.addClass(this.el.nativeElement, 'column');
+    if (this.role) {
+      this.render.setAttribute(this.el.nativeElement, 'role', this.role);
+    }
+  }
 }

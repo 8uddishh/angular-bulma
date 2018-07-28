@@ -23,22 +23,7 @@ export class BulmaBaseClassDirective implements OnInit {
   constructor(protected render: Renderer2, protected el: ElementRef) {}
 
   ngOnInit(): void {
-    const tag = this.el.nativeElement.tagName.toLowerCase();
-    if (
-      tag == 'div' ||
-      tag == 'button' ||
-      tag == 'input' ||
-      tag == 'select' ||
-      tag == 'form' ||
-      tag == 'ul' ||
-      tag == 'li' ||
-      tag == 'img' ||
-      tag == 'span'
-    ) {
-      this.render.addClass(this.el.nativeElement, this.className);
-    } else {
-      this.el.nativeElement.childNodes[0].classList.add(this.className);
-    }
+    this.render.addClass(this.el.nativeElement, this.className);
   }
 }
 
