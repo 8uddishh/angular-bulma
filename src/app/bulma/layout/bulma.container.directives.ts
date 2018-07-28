@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 
 @Directive({
-  selector: 'bulma-container[fluid]'
+  selector: 'bulma-container[fluid], [container][fluid]'
 })
 export class BulmaContainerFluidDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -19,7 +19,7 @@ export class BulmaContainerFluidDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-container[fullhd]'
+  selector: 'bulma-container[fullhd], [container][fullhd]'
 })
 export class BulmaContainerFullHdDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -30,7 +30,7 @@ export class BulmaContainerFullHdDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-container[widescreen]'
+  selector: 'bulma-container[widescreen], [container][widescreen]'
 })
 export class BulmaContainerWideScreenDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}

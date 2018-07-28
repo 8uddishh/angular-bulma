@@ -9,7 +9,7 @@ import {
 import { BulmaViewportDirective } from '../bulma.base.class.directive';
 
 @Directive({
-  selector: 'bulma-column[three-quarters]'
+  selector: 'bulma-column[three-quarters], [column][three-quarters]'
 })
 export class BulmaColumnThreeQuartersDirective extends BulmaViewportDirective {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -23,7 +23,7 @@ export class BulmaColumnThreeQuartersDirective extends BulmaViewportDirective {
 }
 
 @Directive({
-  selector: 'bulma-column[two-thirds]'
+  selector: 'bulma-column[two-thirds], [column][two-thirds]'
 })
 export class BulmaColumnTwoThirdsDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -37,7 +37,7 @@ export class BulmaColumnTwoThirdsDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[half]'
+  selector: 'bulma-column[half], [column][half]'
 })
 export class BulmaColumnHalfDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -51,7 +51,7 @@ export class BulmaColumnHalfDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[one-third]'
+  selector: 'bulma-column[one-third], [column][one-third]'
 })
 export class BulmaColumnOneThirdDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -65,7 +65,7 @@ export class BulmaColumnOneThirdDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[one-quarter]'
+  selector: 'bulma-column[one-quarter], [column][one-quarter]'
 })
 export class BulmaColumnOneQuarterDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -79,7 +79,7 @@ export class BulmaColumnOneQuarterDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[four-fifths]'
+  selector: 'bulma-column[four-fifths], [column][four-fifths]'
 })
 export class BulmaColumnFourFifthsDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -93,7 +93,7 @@ export class BulmaColumnFourFifthsDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[three-fifths]'
+  selector: 'bulma-column[three-fifths], [column][three-fifths]'
 })
 export class BulmaColumnThreeFifthsDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -107,7 +107,7 @@ export class BulmaColumnThreeFifthsDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[two-fifths]'
+  selector: 'bulma-column[two-fifths], [column][two-fifths]'
 })
 export class BulmaColumnTwoFifthsDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -121,7 +121,7 @@ export class BulmaColumnTwoFifthsDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[one-fifth]'
+  selector: 'bulma-column[one-fifth], [column][one-fifth]'
 })
 export class BulmaColumnOneFifthDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -149,7 +149,7 @@ export class BulmaColumnOneDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-two], bulma-tile[span-two], [tile][span-two]'
+  selector: 'bulma-column[span-two], [column][span-two], bulma-tile[span-two], [tile][span-two]'
 })
 export class BulmaColumnTwoDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -163,7 +163,7 @@ export class BulmaColumnTwoDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-three], bulma-tile[span-three], [tile][span-three]'
+  selector: 'bulma-column[span-three], [column][span-three], bulma-tile[span-three], [tile][span-three]'
 })
 export class BulmaColumnThreeDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -177,7 +177,7 @@ export class BulmaColumnThreeDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-four], bulma-tile[span-four], [tile][span-four]'
+  selector: 'bulma-column[span-four], [column][span-four], bulma-tile[span-four], [tile][span-four]'
 })
 export class BulmaColumnFourDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -191,7 +191,7 @@ export class BulmaColumnFourDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-five], bulma-tile[span-five], [tile][span-five]'
+  selector: 'bulma-column[span-five], [column][span-five], bulma-tile[span-five], [tile][span-five]'
 })
 export class BulmaColumnFiveDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -205,7 +205,7 @@ export class BulmaColumnFiveDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-six], bulma-tile[span-six], [tile][span-six]'
+  selector: 'bulma-column[span-six], [column][span-six], bulma-tile[span-six], [tile][span-six]'
 })
 export class BulmaColumnSixDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -219,7 +219,7 @@ export class BulmaColumnSixDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-seven], bulma-tile[span-seven], [tile][span-seven]'
+  selector: 'bulma-column[span-seven], [column][span-seven], bulma-tile[span-seven], [tile][span-seven]'
 })
 export class BulmaColumnSevenDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -233,7 +233,7 @@ export class BulmaColumnSevenDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-eight], bulma-tile[span-eight], [tile][span-eight]'
+  selector: 'bulma-column[span-eight], [column][span-eight], bulma-tile[span-eight], [tile][span-eight]'
 })
 export class BulmaColumnEightDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -247,7 +247,7 @@ export class BulmaColumnEightDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-nine], bulma-tile[span-nine], [tile][span-nine]'
+  selector: 'bulma-column[span-nine], [column][span-nine], bulma-tile[span-nine], [tile][span-nine]'
 })
 export class BulmaColumnNineDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -261,7 +261,7 @@ export class BulmaColumnNineDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-ten], bulma-tile[span-ten], [tile][span-ten]'
+  selector: 'bulma-column[span-ten], [column][span-ten], bulma-tile[span-ten], [tile][span-ten]'
 })
 export class BulmaColumnTenDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -275,7 +275,7 @@ export class BulmaColumnTenDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-eleven], bulma-tile[span-eleven], [tile][span-eleven]'
+  selector: 'bulma-column[span-eleven], [column][span-eleven], bulma-tile[span-eleven], [tile][span-eleven]'
 })
 export class BulmaColumnElevenDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -289,7 +289,7 @@ export class BulmaColumnElevenDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[span-twelve], bulma-tile[span-twelve], [tile][span-twelve]'
+  selector: 'bulma-tile[span-twelve], [tile][span-twelve]'
 })
 export class BulmaColumnTwelveDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -303,7 +303,7 @@ export class BulmaColumnTwelveDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-three-quarters]'
+  selector: 'bulma-column[offset-three-quarters], [column][offset-three-quarters]'
 })
 export class BulmaColumnOffsetThreeQuartersDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -314,7 +314,7 @@ export class BulmaColumnOffsetThreeQuartersDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-two-thirds]'
+  selector: 'bulma-column[offset-two-thirds], [column][offset-two-thirds]'
 })
 export class BulmaColumnOffsetTwoThirdsDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -325,7 +325,7 @@ export class BulmaColumnOffsetTwoThirdsDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-half]'
+  selector: 'bulma-column[offset-half], [column][offset-half]'
 })
 export class BulmaColumnOffsetHalfDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -336,7 +336,7 @@ export class BulmaColumnOffsetHalfDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-one-third]'
+  selector: 'bulma-column[offset-one-third], [column][offset-one-third]'
 })
 export class BulmaColumnOffsetOneThirdDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -347,7 +347,7 @@ export class BulmaColumnOffsetOneThirdDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-one-quarter]'
+  selector: 'bulma-column[offset-one-quarter], [column][offset-one-quarter]'
 })
 export class BulmaColumnOffsetOneQuarterDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -358,7 +358,7 @@ export class BulmaColumnOffsetOneQuarterDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-four-fifths]'
+  selector: 'bulma-column[offset-four-fifths], [column][offset-four-fifths]'
 })
 export class BulmaColumnOffsetFourFifthsDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -369,7 +369,7 @@ export class BulmaColumnOffsetFourFifthsDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-hree-fifths]'
+  selector: 'bulma-column[offset-three-fifths], [column][offset-three-fifths]'
 })
 export class BulmaColumnOffsetThreeFifthsDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -380,7 +380,7 @@ export class BulmaColumnOffsetThreeFifthsDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-two-fifths]'
+  selector: 'bulma-column[offset-two-fifths], [column][offset-two-fifths]'
 })
 export class BulmaColumnOffsetTwoFifthsDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -391,7 +391,7 @@ export class BulmaColumnOffsetTwoFifthsDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-one-fifth]'
+  selector: 'bulma-column[offset-one-fifth], [column][offset-one-fifth]'
 })
 export class BulmaColumnOffsetOneFifthDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -402,7 +402,7 @@ export class BulmaColumnOffsetOneFifthDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-one]'
+  selector: 'bulma-column[offset-one], [column][offset-one]'
 })
 export class BulmaColumnOffsetOneDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -413,7 +413,7 @@ export class BulmaColumnOffsetOneDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-two]'
+  selector: 'bulma-column[offset-two], [column][offset-two]'
 })
 export class BulmaColumnOffsetTwoDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
@@ -424,7 +424,7 @@ export class BulmaColumnOffsetTwoDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-three]'
+  selector: 'bulma-column[offset-three], [column][offset-three]'
 })
 export class BulmaColumnOffsetThreeDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -435,7 +435,7 @@ export class BulmaColumnOffsetThreeDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-four]'
+  selector: 'bulma-column[offset-four], [column][offset-four]'
 })
 export class BulmaColumnOffsetFourDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -446,7 +446,7 @@ export class BulmaColumnOffsetFourDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-five]'
+  selector: 'bulma-column[offset-five], [column][offset-five]'
 })
 export class BulmaColumnOffsetFiveDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -457,7 +457,7 @@ export class BulmaColumnOffsetFiveDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-six]'
+  selector: 'bulma-column[offset-six], [column][offset-six]'
 })
 export class BulmaColumnOffsetSixDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -468,7 +468,7 @@ export class BulmaColumnOffsetSixDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-seven]'
+  selector: 'bulma-column[offset-seven], [column][offset-seven]'
 })
 export class BulmaColumnOffsetSevenDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -479,7 +479,7 @@ export class BulmaColumnOffsetSevenDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-eight]'
+  selector: 'bulma-column[offset-eight], [column][offset-eight]'
 })
 export class BulmaColumnOffsetEightDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -490,7 +490,7 @@ export class BulmaColumnOffsetEightDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-nine]'
+  selector: 'bulma-column[offset-nine], [column][offset-nine]'
 })
 export class BulmaColumnOffsetNineDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -501,7 +501,7 @@ export class BulmaColumnOffsetNineDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-ten]'
+  selector: 'bulma-column[offset-ten], [column][offset-ten]'
 })
 export class BulmaColumnOffsetTenDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -512,7 +512,7 @@ export class BulmaColumnOffsetTenDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[offset-eleven]'
+  selector: 'bulma-column[offset-eleven], [column][offset-eleven]'
 })
 export class BulmaColumnOfsetElevenDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
@@ -523,7 +523,7 @@ export class BulmaColumnOfsetElevenDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-column[narrow]'
+  selector: 'bulma-column[narrow], [column][offset-narrow]'
 })
 export class BulmaColumnNarrowDirective extends BulmaViewportDirective
   implements OnInit {

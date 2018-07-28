@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'bulma-columns',
+  selector: 'bulma-columns, [columns]',
   template: `<ng-content></ng-content>`
 })
 export class BulmaColumnsComponent implements OnInit {
@@ -17,7 +17,7 @@ export class BulmaColumnsComponent implements OnInit {
 }
 
 @Component({
-  selector: 'bulma-column',
+  selector: 'bulma-column, [column]',
   template: `<ng-content></ng-content>`
 })
 export class BulmaColumnComponent implements OnInit {

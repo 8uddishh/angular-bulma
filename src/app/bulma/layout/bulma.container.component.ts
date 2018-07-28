@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'bulma-container',
+  selector: 'bulma-container, [container]',
   template: `<ng-content></ng-content>`,
   styles: [`:host {
     display: block;

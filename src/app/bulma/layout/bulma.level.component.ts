@@ -1,15 +1,13 @@
 import {
-    Directive,
     ElementRef,
     Input,
-    Renderer,
     OnInit,
     Renderer2,
     Component
   } from '@angular/core';
 
   @Component({
-    selector: 'bulma-level',
+    selector: 'bulma-level, [level]',
     template: `<ng-content></ng-content>`,
     styleUrls: []
   })
@@ -26,7 +24,7 @@ import {
   }
 
   @Component({
-    selector: 'bulma-level-left',
+    selector: 'bulma-level-left, [level-left]',
     template: `<ng-content></ng-content>`,
     styleUrls: []
   })
@@ -43,7 +41,7 @@ import {
   }
 
   @Component({
-    selector: 'bulma-level-right',
+    selector: 'bulma-level-right, [level-right]',
     template: `<ng-content></ng-content>`,
     styleUrls: []
   })
@@ -60,7 +58,7 @@ import {
   }
 
   @Component({
-    selector: 'bulma-level-item',
+    selector: 'bulma-level-item, [level-item]',
     template: `<ng-content></ng-content>`,
     styleUrls: []
   })
