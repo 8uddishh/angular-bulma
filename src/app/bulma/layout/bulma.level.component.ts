@@ -1,25 +1,23 @@
 import {
     ElementRef,
-    Input,
-    OnInit,
     Renderer2,
     Component
   } from '@angular/core';
+  import { BulmaBaseClassDirective } from '../bulma.base.class.directive';
 
   @Component({
     selector: 'bulma-level, [level]',
     template: `<ng-content></ng-content>`,
     styleUrls: []
   })
-  export class BulmaLevelComponent implements OnInit {
-    @Input() role: string = '';
-    constructor(private el: ElementRef, private render: Renderer2) {}
+  export class BulmaLevelComponent extends BulmaBaseClassDirective {
+    constructor(protected render: Renderer2, protected el: ElementRef) {
+      super(render, el);
+    }
   
     ngOnInit(): void {
-      this.render.addClass(this.el.nativeElement, 'level');
-      if (this.role) {
-        this.render.setAttribute(this.el.nativeElement, 'role', this.role);
-      }
+      this.className = 'level';
+      super.ngOnInit();
     }
   }
 
@@ -28,15 +26,14 @@ import {
     template: `<ng-content></ng-content>`,
     styleUrls: []
   })
-  export class BulmaLevelLeftComponent implements OnInit {
-    @Input() role: string = '';
-    constructor(private el: ElementRef, private render: Renderer2) {}
+  export class BulmaLevelLeftComponent extends BulmaBaseClassDirective {
+    constructor(protected render: Renderer2, protected el: ElementRef) {
+      super(render, el);
+    }
   
     ngOnInit(): void {
-      this.render.addClass(this.el.nativeElement, 'level-left');
-      if (this.role) {
-        this.render.setAttribute(this.el.nativeElement, 'role', this.role);
-      }
+      this.className = 'level-left';
+      super.ngOnInit();
     }
   }
 
@@ -45,15 +42,14 @@ import {
     template: `<ng-content></ng-content>`,
     styleUrls: []
   })
-  export class BulmaLevelRightComponent implements OnInit {
-    @Input() role: string = '';
-    constructor(private el: ElementRef, private render: Renderer2) {}
+  export class BulmaLevelRightComponent extends BulmaBaseClassDirective {
+    constructor(protected render: Renderer2, protected el: ElementRef) {
+      super(render, el);
+    }
   
     ngOnInit(): void {
-      this.render.addClass(this.el.nativeElement, 'level-right');
-      if (this.role) {
-        this.render.setAttribute(this.el.nativeElement, 'role', this.role);
-      }
+      this.className = 'level-right';
+      super.ngOnInit();
     }
   }
 
@@ -62,14 +58,13 @@ import {
     template: `<ng-content></ng-content>`,
     styleUrls: []
   })
-  export class BulmaLevelItemComponent implements OnInit {
-    @Input() role: string = '';
-    constructor(private el: ElementRef, private render: Renderer2) {}
+  export class BulmaLevelItemComponent extends BulmaBaseClassDirective {
+    constructor(protected render: Renderer2, protected el: ElementRef) {
+      super(render, el);
+    }
   
     ngOnInit(): void {
-      this.render.addClass(this.el.nativeElement, 'level-item');
-      if (this.role) {
-        this.render.setAttribute(this.el.nativeElement, 'role', this.role);
-      }
+      this.className = 'level-item';
+      super.ngOnInit();
     }
   }

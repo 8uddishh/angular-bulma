@@ -2,7 +2,6 @@ import {
   Directive,
   ElementRef,
   Input,
-  Renderer,
   OnInit,
   Renderer2
 } from '@angular/core';

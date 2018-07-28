@@ -22,10 +22,16 @@ export class BulmaBaseClassDirective implements OnInit {
   @Input() role: string = '';
   constructor(protected render: Renderer2, protected el: ElementRef) {}
 
+  @Input('aria-label') ariaLabel: string = '';
+
   ngOnInit(): void {
     this.render.addClass(this.el.nativeElement, this.className);
     if (this.role) {
       this.render.setAttribute(this.el.nativeElement, 'role', this.role);
+    }
+
+    if (this.ariaLabel && this.ariaLabel != '') {
+      this.render.setAttribute(this.el.nativeElement, 'aria-label', this.role);
     }
   }
 }

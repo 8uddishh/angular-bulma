@@ -6,16 +6,6 @@ import {
 import { BulmaBaseClassDirective } from './../bulma.base.class.directive';
 
 @Directive({
-  selector: '[button]'
-})
-export class BulmaButtonDirective extends BulmaBaseClassDirective {
-  constructor(protected render: Renderer2, protected el: ElementRef) {
-    super(render, el);
-    this.className = 'button';
-  }
-}
-
-@Directive({
   selector: '[primary]'
 })
 export class BulmaPrimaryDirective extends BulmaBaseClassDirective {
@@ -102,6 +92,16 @@ export class BulmaBoldDirective extends BulmaBaseClassDirective {
   constructor(protected render: Renderer2, protected el: ElementRef) {
     super(render, el);
     this.className = 'is-bold';
+  }
+}
+
+@Directive({
+  selector: '[small]'
+})
+export class BulmaSmallDirective extends BulmaBaseClassDirective {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+    this.className = 'is-small';
   }
 }
 
