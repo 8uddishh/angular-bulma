@@ -109,9 +109,15 @@ import {
   BulmaColumnOffsetTwoDirective,
   BulmaColumnOffsetTwoFifthsDirective,
   BulmaColumnOffsetTwoThirdsDirective,
-  BulmaColumnoOfsetElevenDirective,
+  BulmaColumnOfsetElevenDirective,
   BulmaColumnOffsetHalfDirective,
-  BulmaColumnoNarrowDirective
+  BulmaColumnNarrowDirective,
+  BulmaColumnsCenteredDirective,
+  BulmaColumnsDesktopDirective,
+  BulmaColumnsGaplessDirective,
+  BulmaColumnsMobileDirective,
+  BulmaColumnsMultilineDirective,
+  BulmaColumnsSizeDirective
 } from './column';
 
 @NgModule({
@@ -217,9 +223,15 @@ import {
     BulmaColumnOffsetTwoDirective,
     BulmaColumnOffsetTwoFifthsDirective,
     BulmaColumnOffsetTwoThirdsDirective,
-    BulmaColumnoOfsetElevenDirective,
+    BulmaColumnOfsetElevenDirective,
     BulmaColumnOffsetHalfDirective,
-    BulmaColumnoNarrowDirective
+    BulmaColumnNarrowDirective,
+    BulmaColumnsCenteredDirective,
+    BulmaColumnsDesktopDirective,
+    BulmaColumnsGaplessDirective,
+    BulmaColumnsMobileDirective,
+    BulmaColumnsMultilineDirective,
+    BulmaColumnsSizeDirective
   ],
   exports: [
     BulmaContainerComponent,
@@ -322,9 +334,15 @@ import {
     BulmaColumnOffsetTwoDirective,
     BulmaColumnOffsetTwoFifthsDirective,
     BulmaColumnOffsetTwoThirdsDirective,
-    BulmaColumnoOfsetElevenDirective,
+    BulmaColumnOfsetElevenDirective,
     BulmaColumnOffsetHalfDirective,
-    BulmaColumnoNarrowDirective
+    BulmaColumnNarrowDirective,
+    BulmaColumnsCenteredDirective,
+    BulmaColumnsDesktopDirective,
+    BulmaColumnsGaplessDirective,
+    BulmaColumnsMobileDirective,
+    BulmaColumnsMultilineDirective,
+    BulmaColumnsSizeDirective
   ]
 })
 export class BulmaModule {}

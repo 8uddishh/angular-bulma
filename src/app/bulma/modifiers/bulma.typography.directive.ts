@@ -11,7 +11,7 @@ export type Size = '1' | '2' | '3' | '4' | '5' | '6' | '7';
 })
 export class BulmaTextSizeDirective extends BulmaViewportDirective
   implements OnInit {
-  @Input('size') size: Size = '4';
+  @Input('text-size') size: Size = '4';
   constructor(protected render: Renderer2, protected el: ElementRef) {
     super(render, el);
   }

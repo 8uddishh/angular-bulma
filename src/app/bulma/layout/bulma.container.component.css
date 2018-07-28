@@ -1,1 +1,3 @@
-:host { display:block!important; }
+:host {
+  display: block !important;
+}

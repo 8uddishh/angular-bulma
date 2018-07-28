@@ -11,209 +11,266 @@ import { BulmaViewportDirective } from '../bulma.base.class.directive';
 @Directive({
   selector: 'bulma-column[three-quarters]'
 })
-export class BulmaColumnThreeQuartersDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnThreeQuartersDirective extends BulmaViewportDirective {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-three-quarters');
+    this.vclassName = `is-three-quarters`;
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[two-thirds]'
 })
-export class BulmaColumnTwoThirdsDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnTwoThirdsDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-two-thirds');
+    this.vclassName = `is-two-thirds`;
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[half]'
 })
-export class BulmaColumnHalfDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnHalfDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-half');
+    this.vclassName = `is-half`;
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[one-third]'
 })
-export class BulmaColumnOneThirdDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnOneThirdDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-one-third');
+    this.vclassName = `is-one-third`;
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[one-quarter]'
 })
-export class BulmaColumnOneQuarterDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnOneQuarterDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-one-quarter');
+    this.vclassName = `is-one-quarter`;
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[four-fifths]'
 })
-export class BulmaColumnFourFifthsDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnFourFifthsDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-four-fifths');
+    this.vclassName = `is-four-fifths`;
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[three-fifths]'
 })
-export class BulmaColumnThreeFifthsDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnThreeFifthsDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-three-fifths');
+    this.vclassName = `is-three-fifths`;
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[two-fifths]'
 })
-export class BulmaColumnTwoFifthsDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnTwoFifthsDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-two-fifths');
+    this.vclassName = `is-two-fifths`;
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[one-fifth]'
 })
-export class BulmaColumnOneFifthDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnOneFifthDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-one-fifth');
+    this.vclassName = 'is-one-fifth';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[two]'
 })
-export class BulmaColumnTwoDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnTwoDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-2');
+    this.vclassName = 'is-2';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[three]'
 })
-export class BulmaColumnThreeDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnThreeDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-3');
+    this.vclassName = 'is-3';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[four]'
 })
-export class BulmaColumnFourDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnFourDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-4');
+    this.vclassName = 'is-4';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[five]'
 })
-export class BulmaColumnFiveDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnFiveDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-5');
+    this.vclassName = 'is-5';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[six]'
 })
-export class BulmaColumnSixDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnSixDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-6');
+    this.vclassName = 'is-6';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[seven]'
 })
-export class BulmaColumnSevenDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnSevenDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-7');
+    this.vclassName = 'is-7';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[eight]'
 })
-export class BulmaColumnEightDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnEightDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-8');
+    this.vclassName = 'is-8';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[nine]'
 })
-export class BulmaColumnNineDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnNineDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-9');
+    this.vclassName = 'is-9';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[ten]'
 })
-export class BulmaColumnTenDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnTenDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-10');
+    this.vclassName = 'is-10';
+    super.ngOnInit();
   }
 }
 
 @Directive({
   selector: 'bulma-column[eleven]'
 })
-export class BulmaColumnElevenDirective implements OnInit {
-  constructor(private el: ElementRef, private render: Renderer2) {}
+export class BulmaColumnElevenDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
 
   ngOnInit(): void {
-    this.render.addClass(this.el.nativeElement, 'is-11');
+    this.vclassName = 'is-11';
+    super.ngOnInit();
   }
 }
 
@@ -429,7 +486,7 @@ export class BulmaColumnOffsetTenDirective implements OnInit {
 @Directive({
   selector: 'bulma-column[offset-eleven]'
 })
-export class BulmaColumnoOfsetElevenDirective implements OnInit {
+export class BulmaColumnOfsetElevenDirective implements OnInit {
     constructor(private el: ElementRef, private render: Renderer2) {}
 
     ngOnInit(): void {
@@ -440,7 +497,7 @@ export class BulmaColumnoOfsetElevenDirective implements OnInit {
 @Directive({
   selector: 'bulma-column[narrow]'
 })
-export class BulmaColumnoNarrowDirective extends BulmaViewportDirective
+export class BulmaColumnNarrowDirective extends BulmaViewportDirective
   implements OnInit {
   constructor(protected render: Renderer2, protected el: ElementRef) {
     super(render, el);
