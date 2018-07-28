@@ -43,7 +43,7 @@ export class BulmaColumnsGaplessDirective implements OnInit {
 }
 
 @Directive({
-  selector: 'bulma-columns[mobile]'
+  selector: 'bulma-columns[mobile], bulma-level[mobile]'
 })
 export class BulmaColumnsMobileDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
