@@ -185,7 +185,8 @@ import {
   BulmaSize5by3Directive,
   BulmaSize5by4Directive,
   BulmaSize9by16Directive,
-  BulmaSquareDirective
+  BulmaSquareDirective,
+  BulmaNotificationComponent
 } from './elements';
 
 @NgModule({
@@ -364,7 +365,8 @@ import {
     BulmaSize5by3Directive,
     BulmaSize5by4Directive,
     BulmaSize9by16Directive,
-    BulmaSquareDirective
+    BulmaSquareDirective,
+    BulmaNotificationComponent
   ],
   exports: [
     BulmaContainerComponent,
@@ -540,7 +542,8 @@ import {
     BulmaSize5by3Directive,
     BulmaSize5by4Directive,
     BulmaSize9by16Directive,
-    BulmaSquareDirective
+    BulmaSquareDirective,
+    BulmaNotificationComponent
   ]
 })
 export class BulmaModule {}
