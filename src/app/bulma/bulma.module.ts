@@ -10,7 +10,21 @@ import {
   BulmaLevelComponent,
   BulmaLevelItemComponent,
   BulmaLevelLeftComponent,
-  BulmaLevelRightComponent
+  BulmaLevelRightComponent,
+  BulmaMediaComponent,
+  BulmaMediaContentComponent,
+  BulmaMediaLeftComponent,
+  BulmaMediaRightComponent,
+  BulmaHeroComponent,
+  BulmaHeroBodyComponent,
+  BulmaHeroFootComponent,
+  BulmaSectionComponent,
+  BulmaFooterComponent,
+  BulmaTileAncestorDirective,
+  BulmaTileChildDirective,
+  BulmaTileComponent,
+  BulmaTileParentDirective,
+  BulmaTileVerticalDirective
 } from './layout';
 
 import {
@@ -70,7 +84,13 @@ import {
   BulmaTextWeightBoldDirective,
   BulmaTextWeightLightDirective,
   BulmaTextWeightNormalDirective,
-  BulmaTextWeightSemiboldDirective
+  BulmaTextWeightSemiboldDirective,
+  BulmaBoldDirective,
+  BulmaDarkDirective,
+  BulmaLightDirective,
+  BulmaFullheightDirective,
+  BulmaLargeDirective,
+  BulmaMediumDirective
 } from './modifiers';
 
 import {
@@ -121,7 +141,9 @@ import {
   BulmaColumnsGaplessDirective,
   BulmaColumnsMobileDirective,
   BulmaColumnsMultilineDirective,
-  BulmaColumnsSizeDirective
+  BulmaColumnsSizeDirective,
+  BulmaColumnOneDirective,
+  BulmaColumnTwelveDirective
 } from './column';
 
 @NgModule({
@@ -239,7 +261,29 @@ import {
     BulmaColumnsGaplessDirective,
     BulmaColumnsMobileDirective,
     BulmaColumnsMultilineDirective,
-    BulmaColumnsSizeDirective
+    BulmaColumnsSizeDirective,
+    BulmaMediaComponent,
+    BulmaMediaContentComponent,
+    BulmaMediaLeftComponent,
+    BulmaMediaRightComponent,
+    BulmaHeroComponent,
+    BulmaHeroBodyComponent,
+    BulmaHeroFootComponent,
+    BulmaBoldDirective,
+    BulmaDarkDirective,
+    BulmaLightDirective,
+    BulmaFullheightDirective,
+    BulmaLargeDirective,
+    BulmaMediumDirective,
+    BulmaSectionComponent,
+    BulmaFooterComponent,
+    BulmaColumnOneDirective,
+    BulmaColumnTwelveDirective,
+    BulmaTileAncestorDirective,
+    BulmaTileChildDirective,
+    BulmaTileComponent,
+    BulmaTileParentDirective,
+    BulmaTileVerticalDirective
   ],
   exports: [
     BulmaContainerComponent,
@@ -354,7 +398,29 @@ import {
     BulmaColumnsGaplessDirective,
     BulmaColumnsMobileDirective,
     BulmaColumnsMultilineDirective,
-    BulmaColumnsSizeDirective
+    BulmaColumnsSizeDirective,
+    BulmaMediaComponent,
+    BulmaMediaContentComponent,
+    BulmaMediaLeftComponent,
+    BulmaMediaRightComponent,
+    BulmaHeroComponent,
+    BulmaHeroBodyComponent,
+    BulmaHeroFootComponent,
+    BulmaBoldDirective,
+    BulmaDarkDirective,
+    BulmaLightDirective,
+    BulmaFullheightDirective,
+    BulmaLargeDirective,
+    BulmaMediumDirective,
+    BulmaSectionComponent,
+    BulmaFooterComponent,
+    BulmaColumnOneDirective,
+    BulmaColumnTwelveDirective,
+    BulmaTileAncestorDirective,
+    BulmaTileChildDirective,
+    BulmaTileComponent,
+    BulmaTileParentDirective,
+    BulmaTileVerticalDirective
   ]
 })
 export class BulmaModule {}

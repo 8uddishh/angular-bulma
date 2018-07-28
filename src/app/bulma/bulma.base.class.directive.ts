@@ -19,11 +19,14 @@ export type Viewport =
   
 export class BulmaBaseClassDirective implements OnInit {
   className: string;
-
+  @Input() role: string = '';
   constructor(protected render: Renderer2, protected el: ElementRef) {}
 
   ngOnInit(): void {
     this.render.addClass(this.el.nativeElement, this.className);
+    if (this.role) {
+      this.render.setAttribute(this.el.nativeElement, 'role', this.role);
+    }
   }
 }
 

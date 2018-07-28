@@ -3,7 +3,9 @@ import { Component, Input, OnInit, ElementRef, Renderer2 } from '@angular/core';
 @Component({
   selector: 'bulma-container',
   template: `<ng-content></ng-content>`,
-  styleUrls: ['bulma.container.component.css']
+  styles: [`:host {
+    display: block;
+  }`]
 })
 export class BulmaContainerComponent implements OnInit {
   @Input() role: string = '';

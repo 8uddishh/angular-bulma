@@ -135,7 +135,21 @@ export class BulmaColumnOneFifthDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[two]'
+  selector: 'bulma-tile[span-one], [tile][span-one]'
+})
+export class BulmaColumnOneDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
+
+  ngOnInit(): void {
+    this.vclassName = 'is-1';
+    super.ngOnInit();
+  }
+}
+
+@Directive({
+  selector: 'bulma-column[span-two], bulma-tile[span-two], [tile][span-two]'
 })
 export class BulmaColumnTwoDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -149,7 +163,7 @@ export class BulmaColumnTwoDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[three]'
+  selector: 'bulma-column[span-three], bulma-tile[span-three], [tile][span-three]'
 })
 export class BulmaColumnThreeDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -163,7 +177,7 @@ export class BulmaColumnThreeDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[four]'
+  selector: 'bulma-column[span-four], bulma-tile[span-four], [tile][span-four]'
 })
 export class BulmaColumnFourDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -177,7 +191,7 @@ export class BulmaColumnFourDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[five]'
+  selector: 'bulma-column[span-five], bulma-tile[span-five], [tile][span-five]'
 })
 export class BulmaColumnFiveDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -191,7 +205,7 @@ export class BulmaColumnFiveDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[six]'
+  selector: 'bulma-column[span-six], bulma-tile[span-six], [tile][span-six]'
 })
 export class BulmaColumnSixDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -205,7 +219,7 @@ export class BulmaColumnSixDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[seven]'
+  selector: 'bulma-column[span-seven], bulma-tile[span-seven], [tile][span-seven]'
 })
 export class BulmaColumnSevenDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -219,7 +233,7 @@ export class BulmaColumnSevenDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[eight]'
+  selector: 'bulma-column[span-eight], bulma-tile[span-eight], [tile][span-eight]'
 })
 export class BulmaColumnEightDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -233,7 +247,7 @@ export class BulmaColumnEightDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[nine]'
+  selector: 'bulma-column[span-nine], bulma-tile[span-nine], [tile][span-nine]'
 })
 export class BulmaColumnNineDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -247,7 +261,7 @@ export class BulmaColumnNineDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[ten]'
+  selector: 'bulma-column[span-ten], bulma-tile[span-ten], [tile][span-ten]'
 })
 export class BulmaColumnTenDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -261,7 +275,7 @@ export class BulmaColumnTenDirective extends BulmaViewportDirective  {
 }
 
 @Directive({
-  selector: 'bulma-column[eleven]'
+  selector: 'bulma-column[span-eleven], bulma-tile[span-eleven], [tile][span-eleven]'
 })
 export class BulmaColumnElevenDirective extends BulmaViewportDirective  {
   constructor(protected render: Renderer2, protected el: ElementRef) {
@@ -270,6 +284,20 @@ export class BulmaColumnElevenDirective extends BulmaViewportDirective  {
 
   ngOnInit(): void {
     this.vclassName = 'is-11';
+    super.ngOnInit();
+  }
+}
+
+@Directive({
+  selector: 'bulma-column[span-twelve], bulma-tile[span-twelve], [tile][span-twelve]'
+})
+export class BulmaColumnTwelveDirective extends BulmaViewportDirective  {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+  }
+
+  ngOnInit(): void {
+    this.vclassName = 'is-12';
     super.ngOnInit();
   }
 }
