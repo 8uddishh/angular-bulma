@@ -6,7 +6,11 @@ import {
   BulmaContainerComponent,
   BulmaContainerFluidDirective,
   BulmaContainerFullHdDirective,
-  BulmaContainerWideScreedDirective
+  BulmaContainerWideScreenDirective,
+  BulmaLevelComponent,
+  BulmaLevelItemComponent,
+  BulmaLevelLeftComponent,
+  BulmaLevelRightComponent
 } from './layout';
 
 import {
@@ -126,7 +130,11 @@ import {
     BulmaContainerComponent,
     BulmaContainerFluidDirective,
     BulmaContainerFullHdDirective,
-    BulmaContainerWideScreedDirective,
+    BulmaContainerWideScreenDirective,
+    BulmaLevelComponent,
+    BulmaLevelItemComponent,
+    BulmaLevelLeftComponent,
+    BulmaLevelRightComponent,
     BulmaButtonDirective,
     BulmaPrimaryDirective,
     BulmaInfoDirective,
@@ -237,7 +245,11 @@ import {
     BulmaContainerComponent,
     BulmaContainerFluidDirective,
     BulmaContainerFullHdDirective,
-    BulmaContainerWideScreedDirective,
+    BulmaContainerWideScreenDirective,
+    BulmaLevelComponent,
+    BulmaLevelItemComponent,
+    BulmaLevelLeftComponent,
+    BulmaLevelRightComponent,
     BulmaButtonDirective,
     BulmaPrimaryDirective,
     BulmaInfoDirective,

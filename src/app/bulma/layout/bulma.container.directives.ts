@@ -32,7 +32,7 @@ export class BulmaContainerFullHdDirective implements OnInit {
 @Directive({
   selector: 'bulma-container[widescreen]'
 })
-export class BulmaContainerWideScreedDirective implements OnInit {
+export class BulmaContainerWideScreenDirective implements OnInit {
   constructor(private el: ElementRef, private render: Renderer2) {}
 
   ngOnInit(): void {
