@@ -199,6 +199,10 @@ import {
   BulmaTitleComponent
 } from './elements';
 
+import {
+  BulmaFormFieldInputComponent
+} from './form';
+
 @NgModule({
   imports: [CommonModule, FormsModule],
   declarations: [
@@ -386,7 +390,8 @@ import {
     BulmaTagsComponent,
     BulmaSubtitleComponent,
     BulmaTitleComponent,
-    BulmaSpacedDirective
+    BulmaSpacedDirective,
+    BulmaFormFieldInputComponent
   ],
   exports: [
     BulmaContainerComponent,
@@ -573,7 +578,8 @@ import {
     BulmaTagsComponent,
     BulmaSubtitleComponent,
     BulmaTitleComponent,
-    BulmaSpacedDirective
+    BulmaSpacedDirective,
+    BulmaFormFieldInputComponent
   ]
 })
 export class BulmaModule {}

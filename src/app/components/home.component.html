@@ -1,5 +1,11 @@
-<bulma-columns>
-    <bulma-column offset-two>Ok the K</bulma-column>
-    <bulma-column four>Ok the k 4</bulma-column>
-    <bulma-column three>Ok the k 3</bulma-column>
-</bulma-columns> 
+<form>
+    <bulma-field-input name="username"
+        [label]="'Username'"
+        [placeholder]="'Enter User name'" 
+        [(ngModel)]="inputValue" 
+        [required]="true" 
+        [requiredMessage]="'User name is required'">
+    </bulma-field-input>
+
+    {{inputValue}}
+</form>

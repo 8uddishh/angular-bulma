@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title = 'app';
+
+  @Input() inputValue: string = 'Test123';
 }

@@ -1,0 +1,15 @@
+<div class="field">
+    <label class="label">{{label}}</label>
+    <div class="control" [ngClass]="{ 'has-icons-left': hasIconLeft, 'has-icons-right': hasIconRight }">
+        <input class="input is-success" type="text" [placeholder]="placeholder" [(ngModel)]="textValue" (keyup)="onKey($event)">
+        <span *ngIf="hasIconLeft" class="icon is-small is-left">
+            <i [ngClass]="iconLeft"></i>
+        </span>
+        <span *ngIf="hasIconRight" class="icon is-small is-right">
+            <i [ngClass]="iconRight"></i>
+        </span>
+    </div>
+    <p *ngIf="validMessage != '' || !isvalid" class="help" [ngClass]="{'is-success': validMessage != '', 'is-danger': !isvalid  }">
+        {{ validMessage != '' ? validMessage : !isvalid ? errorMessage : '' }}
+    </p>
+</div>
