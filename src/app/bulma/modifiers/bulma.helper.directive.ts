@@ -1,5 +1,5 @@
 import { Directive, ElementRef, Renderer2, OnInit } from '@angular/core';
-import { BulmaBaseClassDirective } from './../bulma.base.class.directive';
+import { BulmaBaseClassDirective } from '../bulma.base.class.directive';
 
 @Directive({
   selector: '[clearfix]'

@@ -1,5 +1,5 @@
 import { Directive, ElementRef, Renderer2 } from '@angular/core';
-import { BulmaBaseClassDirective } from './../bulma.base.class.directive';
+import { BulmaBaseClassDirective } from '../bulma.base.class.directive';
 
 @Directive({
   selector: '[image][size-16x16]'

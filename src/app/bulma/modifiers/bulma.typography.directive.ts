@@ -2,7 +2,7 @@ import { Directive, ElementRef, Renderer2, OnInit, Input } from '@angular/core';
 import {
   BulmaBaseClassDirective,
   BulmaViewportDirective
-} from './../bulma.base.class.directive';
+} from '../bulma.base.class.directive';
 
 export type Size = '1' | '2' | '3' | '4' | '5' | '6' | '7';
 

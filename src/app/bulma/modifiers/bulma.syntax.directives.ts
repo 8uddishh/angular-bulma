@@ -3,7 +3,7 @@ import {
   ElementRef,
   Renderer2
 } from '@angular/core';
-import { BulmaBaseClassDirective } from './../bulma.base.class.directive';
+import { BulmaBaseClassDirective } from '../bulma.base.class.directive';
 
 @Directive({
   selector: '[primary]'
@@ -132,5 +132,15 @@ export class BulmaFullheightDirective extends BulmaBaseClassDirective {
   constructor(protected render: Renderer2, protected el: ElementRef) {
     super(render, el);
     this.className = 'is-fullheight';
+  }
+}
+
+@Directive({
+  selector: '[spaced]'
+})
+export class BulmaSpacedDirective extends BulmaBaseClassDirective {
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+    super(render, el);
+    this.className = 'is-spaced';
   }
 }

@@ -90,7 +90,8 @@ import {
   BulmaFullheightDirective,
   BulmaLargeDirective,
   BulmaMediumDirective,
-  BulmaSmallDirective
+  BulmaSmallDirective,
+  BulmaSpacedDirective
 } from './modifiers';
 
 import {
@@ -186,7 +187,16 @@ import {
   BulmaSize5by4Directive,
   BulmaSize9by16Directive,
   BulmaSquareDirective,
-  BulmaNotificationComponent
+  BulmaNotificationComponent,
+  BulmaProgressComponent,
+  BulmaTableComponent,
+  BulmaBorderedDirective,
+  BulmaHoverableDirective,
+  BulmaStripedDirective,
+  BulmaTagComponent,
+  BulmaTagsComponent,
+  BulmaSubtitleComponent,
+  BulmaTitleComponent
 } from './elements';
 
 @NgModule({
@@ -366,7 +376,17 @@ import {
     BulmaSize5by4Directive,
     BulmaSize9by16Directive,
     BulmaSquareDirective,
-    BulmaNotificationComponent
+    BulmaNotificationComponent,
+    BulmaProgressComponent,
+    BulmaTableComponent,
+    BulmaBorderedDirective,
+    BulmaHoverableDirective,
+    BulmaStripedDirective,
+    BulmaTagComponent,
+    BulmaTagsComponent,
+    BulmaSubtitleComponent,
+    BulmaTitleComponent,
+    BulmaSpacedDirective
   ],
   exports: [
     BulmaContainerComponent,
@@ -543,7 +563,17 @@ import {
     BulmaSize5by4Directive,
     BulmaSize9by16Directive,
     BulmaSquareDirective,
-    BulmaNotificationComponent
+    BulmaNotificationComponent,
+    BulmaProgressComponent,
+    BulmaTableComponent,
+    BulmaBorderedDirective,
+    BulmaHoverableDirective,
+    BulmaStripedDirective,
+    BulmaTagComponent,
+    BulmaTagsComponent,
+    BulmaSubtitleComponent,
+    BulmaTitleComponent,
+    BulmaSpacedDirective
   ]
 })
 export class BulmaModule {}
