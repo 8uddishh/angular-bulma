@@ -1,11 +1,8 @@
 <form>
-    <bulma-field-input name="username"
-        [label]="'Username'"
-        [placeholder]="'Enter User name'" 
-        [(ngModel)]="inputValue" 
-        [required]="true" 
+    <bulma-field-input name="username" [label]="'Username'" [placeholder]="'Enter User name'" [(ngModel)]="inputValue" [required]="true"
         [requiredMessage]="'User name is required'">
     </bulma-field-input>
 
-    {{inputValue}}
+    <bulma-field-select name="options" [(ngModel)]="selectedValue" [placeholder]="'Select a option'" [options]="options" [valueField]="'value'"
+        [textField]="'text'" [requiredMessage]="'User name is required'" [required]="true"></bulma-field-select>
 </form>

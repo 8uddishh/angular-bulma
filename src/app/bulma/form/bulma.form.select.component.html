@@ -1,0 +1,6 @@
+<div class="select" [ngClass]="{'is-danger': !isvalid}">
+    <select name="select" [(ngModel)]="selectedValue" (ngModelChange)="onSelect()">
+        <option value>{{placeholder}}</option>
+        <option *ngFor="let opt of options" [value]="opt[valueField]">{{opt[textField]}}</option>
+    </select>
+</div>

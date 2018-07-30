@@ -1,0 +1,13 @@
+<div class="field">
+    <label bulma>{{label}}</label>
+    <div class="control" [ngClass]="{ 'has-icons-left': hasIconLeft }">
+        <bulma-select name="options" [(ngModel)]="selectedValue" [placeholder]="placeholder" [options]="options" [valueField]="valueField"
+            [textField]="textField" [required]="required" (selectionChange)="onSelect($event)"></bulma-select>
+        <span *ngIf="hasIconLeft" class="icon is-small is-left">
+            <i [ngClass]="iconLeft"></i>
+        </span>
+    </div>
+    <p *ngIf="showValidMessage && validMessage != '' || !isvalid" class="help" [ngClass]="{'is-success': validMessage != '', 'is-danger': !isvalid  }">
+        {{ showValidMessage && validMessage != '' ? validMessage : !isvalid ? errorMessage : '' }}
+    </p>
+</div>

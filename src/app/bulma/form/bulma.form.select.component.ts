@@ -3,8 +3,11 @@ import {
   Renderer2,
   Component,
   OnInit,
-  Input
+  Input,
+  Output,
+  EventEmitter
 } from '@angular/core';
+
 import {
   NG_VALUE_ACCESSOR,
   NG_VALIDATORS,
@@ -13,54 +16,52 @@ import {
   Validators,
   ControlValueAccessor
 } from '@angular/forms';
-
 @Component({
-  selector: 'bulma-field-input',
-  templateUrl: './bulma.form.field.input.html',
+  selector: 'bulma-select',
+  templateUrl: './bulma.form.select.component.html',
   providers: [
     {
       provide: NG_VALIDATORS,
       multi: true,
-      useExisting: BulmaFormFieldInputComponent
+      useExisting: BulmaFormSelectComponent
     },
     {
       provide: NG_VALUE_ACCESSOR,
       multi: true,
-      useExisting: BulmaFormFieldInputComponent
+      useExisting: BulmaFormSelectComponent
     }
   ]
 })
-export class BulmaFormFieldInputComponent
+export class BulmaFormSelectComponent
   implements OnInit, Validator, ControlValueAccessor {
-  constructor(protected render: Renderer2, protected el: ElementRef) {}
-  private onChange: (value: string) => void;
+  constructor(protected render: Renderer2, protected el: ElementRef) {
+      this.selectionChange = new EventEmitter<any>();
+  }
+  private onChange: (value: any) => void;
 
   isvalid: boolean = true;
-  errorMessage: string;
-
-  @Input() placeholder: string;
-  textValue: string;
-  @Input() label: string;
+  @Input() placeholder: string = 'Select';
   @Input() required: boolean = false;
-  @Input() validMessage: string = '';
-  @Input() requiredMessage: string = '';
-  @Input() hasIconLeft: boolean = false;
-  @Input() hasIconRight: boolean = false;
-  @Input() iconLeft: string = '';
-  @Input() iconRight: string = '';
+  @Input() valueField: string = '';
+  @Input() textField: string = '';
+  @Input() options: any[] = [];
+  @Output() selectionChange: EventEmitter<any>;
+
+  registerOnValidatorChange?(_: () => void): void {}
+  selectedValue: any;
+  onSelect() {
+    if(this.onChange) {
+        this.onChange(this.selectedValue);
+        this.selectionChange.emit(this.selectedValue);
+    }
+  }
 
   ngOnInit(): void {}
 
-  onKey (evt) {
-    this.onChange(this.textValue);
-  }
-
-  registerOnValidatorChange?(_: () => void): void {}
   validate(control: FormControl) {
     if (this.required) {
       if (!control.value) {
         this.isvalid = false;
-        this.errorMessage = `${this.requiredMessage}`;
         return Validators.required(control);
       }
     }
@@ -68,12 +69,14 @@ export class BulmaFormFieldInputComponent
     return null;
   }
 
-  writeValue(text: string): void {
-    this.textValue = text;
+  writeValue(selected: any): void {
+    this.selectedValue = selected;
   }
+
   registerOnChange(onchange: (value: string) => void): void {
     this.onChange = onchange;
   }
+
   registerOnTouched(fn: any): void {}
 
   setDisabledState?(isDisabled: boolean): void {}
