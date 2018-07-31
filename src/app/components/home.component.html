@@ -3,6 +3,7 @@
         [requiredMessage]="'User name is required'">
     </bulma-field-input>
 
-    <bulma-field-select name="options" [(ngModel)]="selectedValue" [placeholder]="'Select a option'" [options]="options" [valueField]="'value'"
-        [textField]="'text'" [requiredMessage]="'User name is required'" [required]="true"></bulma-field-select>
+    <bulma-field-textarea name="message" [label]="'Message'" [placeholder]="'Enter message name'" [(ngModel)]="message" [required]="true"
+        [requiredMessage]="'Message is required'">
+    </bulma-field-textarea>
 </form>

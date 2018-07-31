@@ -1,6 +1,6 @@
-<div class="field">
+<div field>
     <label bulma>{{label}}</label>
-    <div class="control" [ngClass]="{ 'has-icons-left': hasIconLeft, 'has-icons-right': hasIconRight }">
+    <div control [ngClass]="{ 'has-icons-left': hasIconLeft, 'has-icons-right': hasIconRight }">
         <input bulma type="text" [ngClass]="{'is-danger': !isvalid}" [placeholder]="placeholder" [(ngModel)]="textValue" (keyup)="onKey($event)">
         <span *ngIf="hasIconLeft" class="icon is-small is-left">
             <i [ngClass]="iconLeft"></i>

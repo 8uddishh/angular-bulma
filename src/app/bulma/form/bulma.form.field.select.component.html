@@ -1,6 +1,6 @@
-<div class="field">
+<div field>
     <label bulma>{{label}}</label>
-    <div class="control" [ngClass]="{ 'has-icons-left': hasIconLeft }">
+    <div control [ngClass]="{ 'has-icons-left': hasIconLeft }">
         <bulma-select name="options" [(ngModel)]="selectedValue" [placeholder]="placeholder" [options]="options" [valueField]="valueField"
             [textField]="textField" [required]="required" (selectionChange)="onSelect($event)"></bulma-select>
         <span *ngIf="hasIconLeft" class="icon is-small is-left">

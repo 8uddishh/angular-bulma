@@ -205,7 +205,10 @@ import {
   BulmaFormFieldInputComponent,
   BulmaTextareaDirective,
   BulmaFormSelectComponent,
-  BulmaFormFieldSelectComponent
+  BulmaFormFieldSelectComponent,
+  BulmaFormFieldTextareaComponent,
+  BulmaControlDirective,
+  BulmaFieldDirective
 } from './form';
 
 @NgModule({
@@ -401,7 +404,10 @@ import {
     BulmaLabelComponent,
     BulmaTextareaDirective,
     BulmaFormSelectComponent,
-    BulmaFormFieldSelectComponent
+    BulmaFormFieldSelectComponent,
+    BulmaFormFieldTextareaComponent,
+    BulmaControlDirective,
+    BulmaFieldDirective
   ],
   exports: [
     BulmaContainerComponent,
@@ -594,7 +600,10 @@ import {
     BulmaLabelComponent,
     BulmaTextareaDirective,
     BulmaFormSelectComponent,
-    BulmaFormFieldSelectComponent
+    BulmaFormFieldSelectComponent,
+    BulmaFormFieldTextareaComponent,
+    BulmaControlDirective,
+    BulmaFieldDirective
   ]
 })
 export class BulmaModule {}

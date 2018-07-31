@@ -13,6 +13,7 @@ export class HomeComponent {
     { value: '2', text: 'Text 2'},
     { value: '3', text: 'Text 3'}
   ];
+  message: string = '';
 
   constructor () {
   }
